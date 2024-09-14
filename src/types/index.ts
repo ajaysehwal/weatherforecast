@@ -6,12 +6,15 @@ export interface WeatherData {
   main: {
     temp: number;
     humidity: number;
+    feels_like: number;
   };
   weather: Array<{
     description: string;
   }>;
   wind: {
     speed: number;
+    deg: number;
+    gust: number;
   };
 }
 

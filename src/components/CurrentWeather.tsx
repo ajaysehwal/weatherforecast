@@ -64,7 +64,7 @@ export const CurrentWeather: React.FC<{
           <WeatherDetail
             icon={<Thermometer className="w-8 h-8 mr-3" />}
             label="Feels Like"
-            value={`${Math.round(weather.main.temp)}°${
+            value={`${Math.round(weather.main.feels_like)}°${
               unit === "metric" ? "C" : "F"
             }`}
           />
